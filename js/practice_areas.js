@@ -21,5 +21,5 @@ const areaCircle = radio => (radio ** 2) * Math.PI
 
 // Escuchadores de Eventos 
 buttonCircle.addEventListener('click', function () {
-
+    circleDiv.classList = ["show"]
 })
