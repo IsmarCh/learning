@@ -1,5 +1,5 @@
-var buttonM = document.getElementById('pesoM')
-var buttonJ = document.getElementById('pesoJ')
+var buttonMarte = document.getElementById('pesoM')
+var buttonJupiter = document.getElementById('pesoJ')
 var inputText = document.getElementById('peso')
 var respuesta = document.getElementById('Respuesta')
 
@@ -23,5 +23,5 @@ function calcularPeso (planeta) {
 	inputText.value = null
 }
 
-buttonM.addEventListener('click', calcularPeso.bind(null, 'pesoM'))
-buttonJ.addEventListener('click', calcularPeso.bind(null, 'pesoJ'))
+buttonMarte.addEventListener('click', calcularPeso.bind(null, 'pesoM'))
+buttonJupiter.addEventListener('click', calcularPeso.bind(null, 'pesoJ'))
