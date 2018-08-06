@@ -15,9 +15,9 @@ let triangleAltura = document.getElementById('trianguloAltura')
 let squareSide = document.getElementById('cuadradoSide')
 
 // Declaración de variables
-const triangleArea = (base, area) => (base * area) / 2
-const squareArea = lados => lados ** 2
-const areaCircle = radio => (radio ** 2) * Math.PI
+const triangleArea = (base, altura) => (base * altura) / 2
+const squareArea = lado => lado ** 2
+const circleArea = radio => (radio ** 2) * Math.PI
 
 // Escuchadores de Eventos 
 buttonCircle.addEventListener('click', function () {
