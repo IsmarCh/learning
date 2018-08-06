@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>CALCULA UN ÁREA</title>
+
+	<!-- CSS y JS -->
+	<style type="text/css">
+		.hide {
+			display: none;
+		}
+
+		.show {
+			margin-top: 20px;
+		}
+
+		.send {
+			width: 75px;
+		}
+	</style>
+</head>
+<body>
+	<h1>CALCULA UN ÁREA</h1>
+
+	<label>Deseas calcular un: </label>
+	<button id="circle" class="send">Círculo</button>
+	<br />
+
+	<label>Deseas calcular un: </label>
+	<button id='triangle' class="send">Triángulo</button>
+	<br />
+
+	<label>Deseas calcular un: </label>
+	<button id='square' class="send">Cuadrado</button>
+	<br />
+
+	<!---     Divs     --->  
+	
+	<div class="hide" id="circleDiv">
+		<label for="circleRadio">Ingresa el radio</label>
+		<input type="number" name="circleRadio" id="circleRadio">
+
+		<button id="sendCircle">Enviar</button>
+	</div>
+
+	<div class="hide" id="triangleDiv">
+		<label for="triangleBase">Ingresa la base</label>
+		<input type="number" name="triangleBase" id="triangleBase">
+
+		<label for="alturaTriangle">Ingresa la altura</label>
+		<input type="number" name="alturaTriangle" id="alturaTriangle">
+
+		<button id="sendTriangle">Enviar</button>
+	</div>
+
+	<div class="hide" id="squareDiv">
+		<label for="squareSide">Ingresa los lados</label>
+		<input type="number" name="squareSide" id="squareSide">
+
+		<button id="sendSquare">Enviar</button>
+	</div>
+
+	<p id='resultados'></p>
+
+	<script type="text/javascript" src="js/calcularAreas.js"></script>
+</body>
+</html>
