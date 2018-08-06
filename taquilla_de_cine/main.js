@@ -16,9 +16,9 @@ let movie = {
     button3: document.getElementById('peli3'),
     actual: null,
     titles: [
-        {title: 'Los Increíbles 2', edad: 0},
-        {title: '50 sombras mas oscuras', edad: 17}, 
-        {title: '300: El nacimiento de un imperio', edad: 15}
+        {title: 'Los Increíbles 2', age: 0},
+        {title: '50 sombras mas oscuras', age: 17}, 
+        {title: '300: El nacimiento de un imperio', age: 15}
     ]
 }
 
@@ -52,13 +52,12 @@ buy.addEventListener('click', function () {
         return
     }
 
-    let message = "Gracias "
+    if (age.value < movie.actual.age) {
+        alert("No tienes edad para ver la pelicula. Debes de tener: " + movie.actual.age)
+        return
+    }
 
-    message += sex.man.checked ? "señor " : "señora "
-
-    message += name.value 
-
-    message += " por su compra"
+    let message = `Gracias ${sex.man.checked ? "señor" : "señora"} ${name.value} por su compra`
 
     alert(message)
 })
