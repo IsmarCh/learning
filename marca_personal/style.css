@@ -1,0 +1,15 @@
+.text-purple {
+    color: purple
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+* {
+    text-align: center;
+}
