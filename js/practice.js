@@ -7,15 +7,15 @@ var gTierra = 9.8
 var gMarte = 6.7
 var gJupiter = 10.8
 
-function calculoPeso (planeta) {
-	var datoP = inputText.value
+function calcularPeso (planeta) {
+	var datoPeso = inputText.value
 
 	if ( planeta == 'pesoM') {
-		var pesof = ( gMarte * datoP ) / gTierra
+		var pesof = ( gMarte * datoPeso ) / gTierra
 		var mensajeF = 'Tu peso en Marte es: ' + parseInt(pesof) + 'kg'
 	}
 	else {
-	var pesof = ( gJupiter * datoP ) / gTierra
+	var pesof = ( gJupiter * datoPeso ) / gTierra
 	var mensajeF = 'Tu peso en Júpiter es: ' + parseInt(pesof) + 'kg'
 	}
 
@@ -23,5 +23,5 @@ function calculoPeso (planeta) {
 	inputText.value = null
 }
 
-buttonM.addEventListener('click', calculoPeso.bind(null, 'pesoM'))
-buttonJ.addEventListener('click', calculoPeso.bind(null, 'pesoJ'))
+buttonM.addEventListener('click', calcularPeso.bind(null, 'pesoM'))
+buttonJ.addEventListener('click', calcularPeso.bind(null, 'pesoJ'))
