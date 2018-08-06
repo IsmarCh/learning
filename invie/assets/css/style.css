@@ -1,44 +1,49 @@
+/* Ugly Code
+	Este codigo es horrible y lo sentaremos en la esquina
 
-/*
-Este codigo es horrible y lo sentaremos en la esquina
+	body {
+		font-family: Allerta;
+		margin: 20px;
+		padding: 40px;	
+		background-color: black
+	}
 
-body {
-	font-family: Allerta;
-	margin: 20px;
-	padding: 40px;	
-	background-color: black
-}
+	h1 {
+		color: brown;
+	}
 
-h1 {
-	color: brown;
-}
+	h2,h3,h4 {
+		color: white;
+	}
 
-h2,h3,h4 {
-	color: white;
-}
+	h4 {
+		color: peru;
+	}
 
-h4 {
-	color: peru;
-}
+	ol {
+		color:white;
+	}
 
-ol {
-	color:white;
-}
+	ul {
+		color:white;
+		position: absolute;
+		top: 50px;
+		left: 550px;
+	}
 
-ul {
-	color:white;
-	position: absolute;
-	top: 50px;
-	left: 550px;
-}
+	label {
+		color:white;
+	}
 
-label {
-	color:white;
-}
-
-button {
-	font-family:Allerta;
-	color:white;
-	background-color:brown;
-}
+	button {
+		font-family:Allerta;
+		color:white;
+		background-color:brown;
+	}
 */
+.header-bar * {
+	border: 1px solid red;
+}
+.menu, .menu-item {
+	display: inline-block;
+} 
