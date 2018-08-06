@@ -15,7 +15,7 @@ let triangleAltura = document.getElementById('trianguloAltura')
 let squareSide = document.getElementById('cuadradoSide')
 
 // Declaración de variables
-const areaTriangle = (base, area) => (base * area) / 2
+const triangleArea = (base, area) => (base * area) / 2
 const areaSquare = lados => lados ** 2
 const areaCircle = radio => (radio ** 2) * Math.PI
 
