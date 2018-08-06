@@ -23,3 +23,9 @@ const areaCircle = radio => (radio ** 2) * Math.PI
 buttonCircle.addEventListener('click', function () {
     circleDiv.classList = ["show"]
 })
+buttonTriangle.addEventListener('click', function () {
+    triangleDiv.classList = ["show"]
+})
+buttonSquare.addEventListener('click', function () {
+    squareDiv.classList = ["show"]
+})
