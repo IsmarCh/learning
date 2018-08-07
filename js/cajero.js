@@ -29,7 +29,7 @@ const textFinal = document.getElementById('exitosaDiv')
 
 // Escuchadores de Evento 
 buttonClave.addEventListener('click', function () {
-    if (inputClave.value) {
+    if (!inputClave.value) {
         alert("Ingrese su clave")
         return
     }
@@ -43,18 +43,19 @@ buttonContinuar.addEventListener('click', function () {
         return
     }
     
-    if (operation.consulta.checked) {
+    if (!operation.consulta.checked) {
         montoDiv.classList = ["show"]
+        cuentaDiv.classList = ["hide"]
     }
 
-    if (operation.retiro.checked) {
+    if (!operation.retiro.checked) {
         montoDiv.classList = ["hide"]
         cuentaDiv.classList = ["show"]
     }
 })
 
 buttonMonto.addEventListener('click', function () {
-    if (monto.value) {
+    if (!monto.value) {
         alert('Ingresa un monto')
         return
     }
@@ -72,7 +73,7 @@ buttonNext.addEventListener('click', function () {
 })
 
 buttonCedula.addEventListener('click', function () {
-    if (inputCedula.value) {
+    if (!inputCedula.value) {
         alert('Ingresa los dos primeros dígitos de tu cédula')
         return
     }
