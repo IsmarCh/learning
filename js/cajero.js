@@ -1,5 +1,6 @@
 // Obtención de Elementos
 let inputClave = document.getElementById('clave')
+let claveDiv = document.getElementById('claveDiv')
 let buttonClave = document.getElementById('aceptClave')
 
 let operacionDiv = document.getElementById('operacionDiv')
@@ -66,5 +67,10 @@ buttonCedula.addEventListener('click', function () {
             alert('Ingresa los dos primeros dígitos de tu cédula')
             return
     }
+    claveDiv.classList = ["hide"]
+    operacionDiv.classList = ["hide"]
+    montoDiv.classList = ["hide"]
+    cuentaDiv.classList = ["hide"]
+    cedulaDiv.classList = ["hide"]
     textFinal.classList = ["show"]
 })
