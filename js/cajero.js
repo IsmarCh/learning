@@ -29,7 +29,7 @@ let textFinal = document.getElementById('exitosaDiv')
 // Escuchadores de Evento 
 buttonClave.addEventListener('click', function () {
     if (inputClave.value == '') {
-            alert("Ingresa tu cédula")
+            alert("Ingrese su clave")
             return
     }
         operacionDiv.classList = ["show"]
