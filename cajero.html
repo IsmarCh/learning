@@ -13,7 +13,7 @@
             }
 
             .hide {
-/*                display: none;*/
+                display: none;
             }
             
             .show {
@@ -24,22 +24,22 @@
     <body>
         <h1 class="titulo">BIENVENIDO</h1>
 
-        <!-- Esto aqui tenia un espacio pero es hermano de h1 y deben de estar la mismo nivel... -->
         <label for="clave">INGRESE SU CLAVE</label>
         <input type="number" name="clave" id="clave">
         <button id="aceptClave">Aceptar</button>
         <br />
 
         <div class="hide" id="operacionDiv">
-            <h3>Seleccione el tipo de operación que desea realizar</h3>
+            <label>Seleccione el tipo de operación que desea realizar</label>
             <br />
-    
-            <!-- Esto seria mejor con un input type="radio"-->
-            <label for="selecRetiro">Retiro</label>
-            <button id="selecRetiro">Seleccionar</button>
-    
-            <label for="selecConsulta">Consulta</label>
-            <button id="selecConsulta">Seleccionar</button>
+            <br />
+
+            <input type="radio" name="operation" id="selecConsulta" value="consulta">
+            <label>Consulta</label>
+
+            <input type="radio" name="operation" id="selecRetiro" value="retiro">
+            <label>Retiro</label>
+            <button id="continue">Continuar</button>
         </div>
 
         <div class="hide" id="montoDiv">
@@ -52,24 +52,26 @@
             <p>Seleccione el tipo de cuenta</p>
             <br />
 
-            <!-- Aqui tambien seria mejor un input type radio... -->
-            <button id="ahorro">Ahorro</button>
-            <button id="corriente">Corriente</button>
+            <input type="radio" name="tipoCuenta" id="ahorro" value="ahorro">
+            <label>Ahorro</label>
+
+            <input type="radio" name="tipoCuenta" id="corriente" value="corriente">
+            <label>Corriente</label>
+
+            <button id="next">Siguiente</button>
         </div>
 
         <div class="hide" id="cedulaDiv">
-            <!-- La etiqueta <b> marca el texto como negrita de una vez ;) -->
             <label for="cedula1">Ingrese los <b>dos primeros</b> dígitos de su cédula</label>
             <br />
+            <br />
 
-            <!-- ID como cedula1, cedula2... no son una buena practica. mejor asi -->
             <input type="number" name="cedula" id="cedula">
-            <button id="acceptCedula">Aceptar</button>
+            <button id="aceptCedula">Aceptar</button>
         </div>
 
-        <!-- Trata de seguir las mismas reglas, todas las demas teminaban en Div -->
         <div class="hide" id="exitosaDiv">
-        </h1>Operación Exitosa</h1>
+            </h1>Operación Exitosa</h1>
         </div>
 
         <script src="js/cajero.js"></script>
