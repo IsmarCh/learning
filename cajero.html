@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>CAJERO</title>
+
+        <style>
+            body {
+                text-align: center;
+            }
+
+            .hide {
+                display: none;
+            }
+            
+            .show {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="titulo">BIENVENIDO</h1>
+
+        <label for="clave">INGRESE SU CLAVE</label>
+        <input type="number" name="clave" id="clave">
+        <br />
+
+        <h3 class="hide">Seleccione el tipo de operación que desea realizar</h3>
+        <br />
+
+        <label for="selecRetiro" class="hide">Retiro</label>
+        <button id="selecRetiro"class="hide">Seleccionar</button>
+
+        <label for="selecConsulta" class="hide">Consulta</label>
+        <button id="selecConsulta" class="hide">Seleccionar</button>
+
+        <label for="monto" class="hide">Ingrese un monto</label>
+        <input type="number" name="monto" id="monto" class="hide">
+        <button id="aceptMonto" class="hide">Aceptar</button>
+
+        <p class="hide">Seleccione el tipo de cuenta</p>
+        <br />
+        <button id="ahorro" class="hide">Ahorro</button>
+        <button id="corriente" class="hide">Corriente</button>
+
+        <p class="hide">Ingrese los <span>dos primeros</span> dígitos de su cédula</p>
+        <br />
+        <input type="number" name="cedula1" id="cedula1" class="hide">
+
+        <h1 class="hide">Operación Exitosa</h1>
+
+        <script src="js/cajero.js"></script>
+    </body>
+</html>
