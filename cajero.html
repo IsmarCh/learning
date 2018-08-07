@@ -24,15 +24,17 @@
     <body>
         <h1 class="titulo">BIENVENIDO</h1>
 
-            <label for="clave">INGRESE SU CLAVE</label>
-            <input type="number" name="clave" id="clave">
-            <button id="aceptClave">Aceptar</button>
-            <br />
+        <!-- Esto aqui tenia un espacio pero es hermano de h1 y deben de estar la mismo nivel... -->
+        <label for="clave">INGRESE SU CLAVE</label>
+        <input type="number" name="clave" id="clave">
+        <button id="aceptClave">Aceptar</button>
+        <br />
 
         <div class="hide" id="operacionDiv">
             <h3>Seleccione el tipo de operación que desea realizar</h3>
             <br />
     
+            <!-- Esto seria mejor con un input type="radio"-->
             <label for="selecRetiro">Retiro</label>
             <button id="selecRetiro">Seleccionar</button>
     
@@ -49,18 +51,24 @@
         <div class="hide" id="cuentaDiv">
             <p>Seleccione el tipo de cuenta</p>
             <br />
+
+            <!-- Aqui tambien seria mejor un input type radio... -->
             <button id="ahorro">Ahorro</button>
             <button id="corriente">Corriente</button>
         </div>
 
         <div class="hide" id="cedulaDiv">
-            <label for="cedula1">Ingrese los <span>dos primeros</span> dígitos de su cédula</label>
+            <!-- La etiqueta <b> marca el texto como negrita de una vez ;) -->
+            <label for="cedula1">Ingrese los <b>dos primeros</b> dígitos de su cédula</label>
             <br />
-            <input type="number" name="cedula1" id="cedula1">
-            <button id="cedula">Aceptar</button>
+
+            <!-- ID como cedula1, cedula2... no son una buena practica. mejor asi -->
+            <input type="number" name="cedula" id="cedula">
+            <button id="acceptCedula">Aceptar</button>
         </div>
 
-        <div class="hide" id="exitosa">
+        <!-- Trata de seguir las mismas reglas, todas las demas teminaban en Div -->
+        <div class="hide" id="exitosaDiv">
         </h1>Operación Exitosa</h1>
         </div>
 
